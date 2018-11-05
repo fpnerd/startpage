@@ -1,0 +1,154 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+
+
+/*
+CUSTOM
+*/
+
+*{
+    color:black;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(fonts/pixelmix.ttf);
+}
+
+html,
+body{
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-family: pixel;
+    font-size:8px !important;
+    color:black;
+}
+
+body{
+    background-color:black;
+    background-image: url(imgs/txture.png);
+}
+
+.align{
+    position: relative;
+    transform-style: preserve-3d;
+    width:100%;
+    height:100%;
+}
+
+.centered{
+    width:700px;
+    height:450px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col{
+    float:left;
+}
+
+.first-col{
+    width:calc(70% - 10px);
+    margin-right:10px;
+    background-color:white;
+}
+
+.second-col{
+    width:30%;
+}
+
+h1{
+    font-size:24px;
+    float:left;
+    width:100%;
+    text-align:center;
+    padding-top:0px;
+    padding-bottom:15px;
+}
+
+.list{
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.list li{
+    float:left;
+    margin-right:10px;
+}
+
+.list li a{
+    text-decoration: none;
+}
+
+.list li a:hover{
+    text-decoration: underline;
+}
+
+.first-col form input{
+    float:left;
+    width:calc(100% - 10px);
+    padding:5px;
+    font-size:10px;
+    border:1px solid rgba(0, 0, 0, 0.6);
+}
+
+form{
+    float:left;
+    width:100%;
+    padding-top:15px;
+    position:absolute;
+    bottom:0;
+}
+
+.block{
+    margin:10px;
+    background-color:white;
+    float:left;
+    width:calc(100% - 20px);
+    position:relative;
+    height:calc(100% - 20px);
+}
+
+.top-line{
+    float:left;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.green a{
+    color: #0c592c;
+}
+
+@media screen and (max-width:700px){
+    .centered{
+        width:100%;
+        max-width:300px;
+        height:auto;
+        display:block;
+        float:left;
+    }
+    .col{
+        width:100% !important;
+    }
+    .second-col{
+        display:none;
+    }
+    form{
+        position:static;
+    }
+
+}
